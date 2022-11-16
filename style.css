@@ -31,7 +31,7 @@ body{
 .intro{
     background-image: url(media/bckg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 1420px;
     display: flex;
     flex-direction: column;
 }
@@ -85,13 +85,19 @@ header h2{
     padding: 10px 0px 10px 0px;
 }
 
-/* .summary::after{  -------------------NIMBUS ARRUMAR
-    content: url(media/nimbus.png);
-    position:absolute;
-    border: none;
-    background-color: transparent;
+.summary::after{
+    background-image: url(media/nimbus.png);
+    content: " ";
+    background-size: cover;
+    height: 100px;
+	width: 100px;
+    background-repeat: no-repeat;
+    position: absolute;
+	z-index: 1;
+	bottom: -2rem;
+    left: 93%;
 }
-*/
+
 
 .summary > p:first-child{
 	overflow:visible;
@@ -170,8 +176,10 @@ header h2{
 
 .explanation{
     display:flex;
+    position: relative;
     flex-direction: column;
     background-color: blue;
+    padding-top: 2rem;
 }
 
 .explanation h3{
@@ -197,9 +205,17 @@ header h2{
 }
 
 .explanation::after{
-    content: url(media/vegeta&trunks.png);
-    display: flex;
-    justify-content: end;
+    background-image: url(media/vegeta&trunks.png);
+    content: " ";
+	background-position: top right;
+    background-size: contain;
+    height: 500px;
+	width: 100%;
+    right: 15%;
+	top:1.3rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 27.2rem; 
 }
 
 
