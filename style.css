@@ -56,7 +56,7 @@ header h1{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: white;
-    background-image: url(/media/gokubanner.png);
+    background-image: url(https://i.imgur.com/MwJiPZd.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -70,7 +70,7 @@ header h2{
     background-color: white;
     color: white;
     -webkit-text-stroke: 3px black;
-    background-image: url(/media/vegetabanner.png);
+    background-image: url(https://i.imgur.com/Wb79T98.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -156,7 +156,7 @@ header h2{
 }
 
 .supporting::before{
-    background: url('/media/shenrontexturebanner.png') left center;
+    background: url(https://i.imgur.com/3SI8dO4.png) left center;
     display: list-item;
     padding-top: 2rem;
     background-size: contain;
