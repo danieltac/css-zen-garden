@@ -9,6 +9,9 @@
     }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
 @font-face {
     font-family: 'SaiyanSans';
     src: url('fonts/Saiyan-Sans.ttf') format('truetype');
@@ -24,14 +27,433 @@
     margin: 0;
 }
 
-body{
+@media only screen and (max-width: 600px){
+    body{
+        background-color: pink;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    body {
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body{
+        overflow-x: hidden;
+        background-color: red;
+    }
+      
+    .intro{
+        background-image: url(media/bckg.png), url(https://i.imgur.com/zZnCOwd.png);
+        background-repeat: no-repeat;
+        background-size: 1350px;
+        display: flex;
+        flex-direction: column;
+    }
+      
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 7.2rem;
+    }
+      
+    header h1{
+        font-size: 100px;
+        font-family: 'SaiyanSans', serif ;
+        color: white;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        -webkit-text-stroke: 3px black;
+        margin-top: 12rem;
+        padding: 1rem 1rem 1rem 1rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: white;
+        background-image: url(https://i.imgur.com/MwJiPZd.png), url(media/gokubanner.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+    
+    header h2{
+        font-size: 80px;
+        font-family: 'Mangat', serif;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        color: white;
+        -webkit-text-stroke: 3px black;
+        background-image: url(https://i.imgur.com/Wb79T98.png), url(media/vegetabanner.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    .summary{
+        position:relative;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 600;
+        border-top: 2px solid #E0BB22;
+        border-bottom: 2px solid #E0BB22;
+        background-color:#F9EA93;
+        padding: 10px 0px 10px 0px;
+    }
+    
+    .summary::after{
+        background-image: url(media/nimbus.png), url(https://i.imgur.com/tEVUZwj.png);
+        content: " ";
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        bottom: -2rem;
+        left: 93%;
+    }
+    
+    
+    .summary > p:first-child{
+        overflow:visible;
+        color: black;
+        animation: marquee 25s linear infinite;
+        position:relative;
+        white-space: nowrap;
+    }
+    .summary > p:last-child{
+        overflow: hidden;
+        animation: marquee 25s linear infinite;
+        position: absolute;
+        top: 1%;
+        animation-delay:12s;
+        padding: 10px 0px 10px 0px;
+        color:black;
+        white-space: nowrap;
+        opacity:0%;
+    }
+    
+    .preamble{
+        background: url(media/gifbackground.gif);    
+        background-repeat: repeat;
+        background-size: cover;
+        font-family: 'Public Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        color: white;
+        text-align: center;
+    }
+    
+    .preamble h3{
+        background-color: #5C768D;
+        font-weight: 600;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        font-size: 40px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0 auto;
+    }
+    
+    .preamble > p:first-of-type{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .preamble p{
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        font-weight: 200;
+        align-self: center;
+        text-align: left;
+        font-size: 22px;
+        width: 800px;
+        background-color: #5C768D;
+    }
+    
+    .preamble > p:last-child{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .preamble::after{
+        content: url(media/gohanssj2.gif);
+        padding-bottom: 10rem;
+    }
+    
+    .supporting::before{
+        background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
+        display: list-item;
+        padding-top: 2rem;
+        background-size: contain;
+        content:"";
+    }
+    
+    .supporting{
+        font-family: 'Public Sans', sans-serif;
+        background-image: url(media/supbackground.jpg), url(https://i.imgur.com/TADy2QD.jpg);
+        background-size: cover;
+        color: white;
+    }
+    
+    .explanation{
+        display:flex;
+        position: relative;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    
+    .explanation h3{
+        background-color: #5C768D;
+        border-top-right-radius: 10px;
+        font-size: 30px;
+        text-align: left;
+        width: 50%;
+        margin-top: 3rem;
+        padding: .5rem 0rem 1rem 5rem;
+    }
+    
+    .explanation p{
+        background-color: #5C768D;
+        font-size: 22px;
+        text-align: left;
+        width: 50%;
+        padding: 0rem 0rem 1rem 5rem;
+    }
+    
+    .explanation > p:last-child{
+        border-bottom-right-radius: 10px;
+    }
+    
+    .explanation::after{
+        background-image: url(media/vegeta&trunks.png), url(https://i.imgur.com/QWMm11L.png);
+        content: " ";
+        background-position: top right;
+        background-size: contain;
+        height: 500px;
+        width: 100%;
+        right: 15%;
+        top:1.3rem;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 27.2rem; 
+    }
+    
+    .participation{
+        width: 50%;
+        left:50%;
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    
+    .participation h3{
+        background-color: #5C768D;
+        border-top-right-radius: 10px;
+        font-size: 30px;
+        text-align: left;
+        border-top-left-radius: 10px;
+        width: 80%;
+        right: 0;
+        margin-top: 3rem;
+        padding: .5rem 5rem 1rem 5rem;
+    }
+    
+    .participation p{
+        background-color: #5C768D;
+        right: 0;
+        font-size: 22px;
+        text-align: left;
+        width: 80%;
+        padding: 0rem 5rem 1rem 5rem;
+    }
+    
+    .participation > p:last-child{
+        border-bottom-left-radius: 10px;
+    }
+    
+    .participation::before{
+        background-image: url(https://i.imgur.com/rKl2dVK.png), url(media/gokupose.png);
+        content: " ";
+        background-position: left;
+        right: 80%;
+        top: 20%;
+        background-size: contain;
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .benefits{
+        display:flex;
+        position: relative;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    
+    .benefits h3{
+        background-color: #5C768D;
+        border-top-right-radius: 10px;
+        font-size: 30px;
+        text-align: left;
+        width: 50%;
+        margin-top: 3rem;
+        padding: .5rem 0rem 1rem 5rem;
+    }
+    
+    .benefits p{
+        background-color: #5C768D;
+        font-size: 22px;
+        text-align: left;
+        width: 50%;
+        padding: 0rem 0rem 1rem 5rem;
+    }
+    
+    .benefits > p:last-child{
+        border-bottom-right-radius: 10px;
+    }
+    
+     .benefits::after{
+        background-image: url(media/gokukid.png), url(https://i.imgur.com/eAEkS2y.png);
+        content: " ";
+        background-position: top right;
+        background-size: contain;
+        height: 250px;
+        width: 100%;
+        right: 15%;
+        top:4rem;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 27.2rem; 
+    }
+     
+    .requirements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .requirements h3{
+        background-color: #5C768D;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 30px;
+        padding: .5rem 1rem 0rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .requirements p{
+        background-color: #5C768D;
+        font-size: 22px;
+        text-align: justify;
+        width: 60%;
+        padding: 0rem 3rem 1rem 3rem;
+    }
+
+    .requirements > p:first-of-type{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding-top: 1rem;
+    }
+    .requirements > p:last-of-type{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 4rem;
+    }
+    .requirements::before{
+        background-image: url(media/vegitto.png), url(https://i.imgur.com/V67TCkH.png);
+        content: " ";
+        background-position: bottom right;
+        background-size: contain;
+        right: 5%;
+        top: 550%;
+        height: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    .requirements::after{
+        background-image: url(media/gogeta.png), url(https://i.imgur.com/vt52i2j.png);
+        content: " ";
+        background-position: center left;
+        background-size: contain;
+        left: 1%;
+        top: 550%;
+        height: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        background:url(media/shenrontexturebanner.png), url(https://i.imgur.com/NyUyyzV.png);
+        background-size: contain;
+        border: 1px solid black;
+
+    }
+    
+    footer a{
+        color:black;
+        background-image: url(media/nimbusicon.png), url(https://i.imgur.com/9eFs4Mu.png);
+		background-size: 100px;
+		background-repeat: no-repeat;
+        text-decoration: none;
+        transition: .3s;
+    }
+
+	footer a:first-of-type{
+		padding: 1rem 2.3rem 1rem 1rem;
+	}
+
+	footer a:nth-child(2){
+		padding: 1rem 3rem 1rem 1.3rem;
+	}
+
+	footer a:nth-child(3){
+		padding: 1rem 3.6rem 1rem 1.5rem;
+	}
+
+	footer a:nth-child(4){
+		padding: 1rem 2.8rem 1rem 1.3rem;
+	}
+
+	footer a:last-of-type{
+		padding: 1rem 3.5rem 1rem 1.6rem;
+	}
+	
+    footer a:hover{
+        transform: scale(1.20);
+        transition: .3s;
+    }
+}
+
+/* body{
     overflow-x: hidden;
 }
   
 .intro{
     background-image: url(media/bckg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 1420px;
     display: flex;
     flex-direction: column;
 }
@@ -56,7 +478,8 @@ header h1{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: white;
-    background-image: url(/media/gokubanner.png);
+    background-image: url(https://i.imgur.com/MwJiPZd.png);
+    background-image: url(media/gokubanner.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -70,7 +493,8 @@ header h2{
     background-color: white;
     color: white;
     -webkit-text-stroke: 3px black;
-    background-image: url(/media/vegetabanner.png);
+    background-image: url(https://i.imgur.com/Wb79T98.png);
+    background-image: url(media/vegetabanner.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -79,19 +503,27 @@ header h2{
 
 .summary{
 	position:relative;
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 600;
 	border-top: 2px solid #E0BB22;
 	border-bottom: 2px solid #E0BB22;
     background-color:#F9EA93;
     padding: 10px 0px 10px 0px;
 }
 
-/* .summary::after{  -------------------NIMBUS ARRUMAR
-    content: url(media/nimbus.png);
-    position:absolute;
-    border: none;
-    background-color: transparent;
+.summary::after{
+    background-image: url(media/nimbus.png);
+    content: " ";
+    background-size: cover;
+    height: 100px;
+	width: 100px;
+    background-repeat: no-repeat;
+    position: absolute;
+	z-index: 1;
+	bottom: -2rem;
+    left: 93%;
 }
-*/
+
 
 .summary > p:first-child{
 	overflow:visible;
@@ -116,6 +548,7 @@ header h2{
     background: url(media/gifbackground.gif);    
     background-repeat: repeat;
     background-size: cover;
+	font-family: 'Public Sans', sans-serif;
     display: flex;
     flex-direction: column;
     padding-top: 10rem;
@@ -124,6 +557,7 @@ header h2{
 
 .preamble h3{
     background-color: #5C768D;
+	font-weight: 600;
     padding: 1rem 1.5rem 1rem 1.5rem;
     font-size: 40px;
     border-top-left-radius: 10px;
@@ -138,6 +572,7 @@ header h2{
 
 .preamble p{
     padding: 1rem 1.5rem 1rem 1.5rem;
+	font-weight: 200;
     align-self: center;
     text-align: left;
     font-size: 22px;
@@ -156,7 +591,8 @@ header h2{
 }
 
 .supporting::before{
-    background: url('/media/shenrontexturebanner.png') left center;
+    background: url(https://i.imgur.com/3SI8dO4.png) left center;
+    background: url(media/shenrontexturebanner.png) left center;
     display: list-item;
     padding-top: 2rem;
     background-size: contain;
@@ -164,14 +600,18 @@ header h2{
 }
 
 .supporting{
+	font-family: 'Public Sans', sans-serif;
     background-color: black;
     color: white;
 }
 
 .explanation{
     display:flex;
+    position: relative;
     flex-direction: column;
     background-color: blue;
+    padding-top: 2rem;
+	padding-bottom: 4rem;
 }
 
 .explanation h3{
@@ -197,11 +637,66 @@ header h2{
 }
 
 .explanation::after{
-    content: url(media/vegeta&trunks.png);
-    display: flex;
-    justify-content: end;
+    background-image: url(media/vegeta&trunks.png);
+    content: " ";
+	background-position: top right;
+    background-size: contain;
+    height: 500px;
+	width: 100%;
+    right: 15%;
+	top:1.3rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 27.2rem; 
 }
 
+.participation{
+	width: 50%;
+	left:50%;
+	position: relative;
+    background-color: green;
+    padding-top: 2rem;
+	padding-bottom: 4rem;
+}
+
+.participation h3{
+	background-color: #5C768D;
+    border-top-right-radius: 10px;
+    font-size: 30px;
+    text-align: left;
+	border-top-left-radius: 10px;
+	width: 80%;
+	right: 0;
+    margin-top: 3rem;
+    padding: .5rem 5rem 1rem 5rem;
+}
+
+.participation p{
+	background-color: #5C768D;
+	right: 0;
+    font-size: 22px;
+    text-align: left;
+    width: 80%;
+    padding: 0rem 5rem 1rem 5rem;
+}
+
+.participation > p:last-child{
+	border-bottom-left-radius: 10px;
+}
+
+.participation::before{
+	background-image: url(https://i.imgur.com/rKl2dVK.png);
+    background-image: url(media/gokupose.png);
+	content: " ";
+	background-position: left;
+	right: 80%;
+	top: 20%;
+    background-size: contain;
+    height: 500px;
+	width: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+}
 
 footer{
     display: flex;
@@ -223,4 +718,4 @@ footer a:hover{
     color:black;
     transform: scale(1.20);
     transition: .3s;
-}
+} */
