@@ -568,16 +568,18 @@
         border-bottom-right-radius: 10px;
     }
     
-    .summary::after{
-        background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
+    .preamble::before {
+        background: url(https://i.imgur.com/3SI8dO4.png), url(media/shenrontexturebanner.png);
         position: absolute;
+        align-self: end;
         background-repeat: repeat-x;
         animation: slide 12s linear infinite;
+        background-attachment: fixed;
         height: 50px;
         width: 1500%;
         bottom: -25%;
         background-size: contain;
-        content:"";
+        content: "";
     }
 
     .preamble{
