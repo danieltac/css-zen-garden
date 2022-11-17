@@ -8,6 +8,24 @@
       left: -200%
     }
 }
+@keyframes slide{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(750px, 0, 0);
+    }
+}
+
+@keyframes slide-reverse{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-750px, 0, 0);
+    }
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;600&display=swap');
 
@@ -26,7 +44,7 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 400px) and (max-width: 600px){
     body{
         overflow-x: hidden;
     }
@@ -43,7 +61,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 12.1rem;
+
     }
       
     header h1{
@@ -54,7 +72,7 @@
         border-right: 2px solid black;
         border-left: 2px solid black;
         -webkit-text-stroke: 1px black;
-        margin-top: 14rem;
+        margin-top: 4rem;
         padding: 1rem 1rem 1rem 1rem;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -81,48 +99,54 @@
     }
     
     .summary{
-        position:relative;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: 600;
-        border-top: 2px solid #E0BB22;
-        border-bottom: 2px solid #E0BB22;
-        background-color:#F9EA93;
-        padding: 10px 0px 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 6rem;
     }
-    
-    .summary::after{
-        background-image: url(media/nimbus.png), url(https://i.imgur.com/tEVUZwj.png);
-        content: " ";
+
+    .summary p{
+        width: 50%;
+        padding: .5rem 1rem 1rem 1rem;
+        font-size: 17px;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        color: white;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .summary p:first-of-type{
+        background-image: url(media/etcbnr.png);
         background-size: cover;
-        height: 100px;
-        width: 100px;
-        background-repeat: no-repeat;
+    }
+
+    .summary p:last-of-type{
+        background-image: url(media/etcbnr2.png);
+        background-size: cover;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .summary a{
+        color: white;
+    }
+    
+    .preamble::before {
+        background: url(https://i.imgur.com/3SI8dO4.png), url(media/shenrontexturebanner.png);
         position: absolute;
-        z-index: 1;
-        bottom: -2rem;
-        left: 93%;
+        align-self: end;
+        background-repeat: repeat-x;
+        animation: slide 12s linear infinite;
+        background-attachment: fixed;
+        height: 50px;
+        width: 1500%;
+        bottom: -25%;
+        background-size: contain;
+        content: "";
     }
-    
-    
-    .summary > p:first-child{
-        overflow:visible;
-        color: black;
-        animation: marquee 25s linear infinite;
-        position:relative;
-        white-space: nowrap;
-    }
-    .summary > p:last-child{
-        overflow: hidden;
-        animation: marquee 25s linear infinite;
-        position: absolute;
-        top: 1%;
-        animation-delay: 18s;
-        padding: 10px 0px 10px 0px;
-        color:black;
-        white-space: nowrap;
-        opacity:0%;
-    }
-    
+
     .preamble{
         background: url(media/gifbackground.gif);    
         background-repeat: repeat;
@@ -167,10 +191,15 @@
     
     .supporting::before{
         background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
+        position: absolute;
+        transform: scaleX(-1);
         display: list-item;
-        padding-top: 2rem;
+        background-repeat: repeat-x;
+        animation: slide-reverse 12s linear infinite;
+        height: 50px;
+        width: 1500%;
         background-size: contain;
-        content:"";
+        content:" ";
     }
     
     .supporting{
@@ -218,7 +247,7 @@
         height: 500px;
         width: 30%;
         left: 65%;
-        top: 25%;
+        top: 15%;
         background-repeat: no-repeat;
         position: absolute;
     }
@@ -261,7 +290,7 @@
         content: " ";
         background-position: left;
         left: -140%;
-        top: 15%;
+        top: 5%;
         rotate: 90deg;
         background-size: contain;
         transform: scale(1.5);
@@ -309,7 +338,7 @@
         height: 300px;
         width: 30%;
         right: 5%;
-        top:30%;
+        top:20%;
         background-repeat: no-repeat;
         position: absolute;
         bottom: 27.2rem; 
@@ -354,7 +383,7 @@
         content: " ";
         background-position: bottom right;
         background-size: contain;
-        top:35%;
+        top:25%;
         right: 5%;
         height: 500px;
         width: 15%;
@@ -430,8 +459,8 @@
         background-size: contain;
         background-position: right;
         align-self: self-end;
-        height: 150px;
-        right: 30%;
+        height: 130px;
+        right: 40%;
         width: 40%;
         background-repeat: no-repeat;
         position: absolute;
@@ -466,7 +495,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 601px) and (max-width: 767px) {
     body{
         overflow-x: hidden;
     }
@@ -483,7 +512,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 12.1rem;
+
     }
       
     header h1{
@@ -506,7 +535,7 @@
     }
     
     header h2{
-        font-size: 30px;
+        font-size: 28px;
         font-family: 'Mangat', serif;
         border: 2px solid black;
         border-radius: 10px;
@@ -521,48 +550,36 @@
     }
     
     .summary{
-        position:relative;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: 600;
-        border-top: 2px solid #E0BB22;
-        border-bottom: 2px solid #E0BB22;
-        background-color:#F9EA93;
-        padding: 10px 0px 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    .summary p{
+        width: 50%;
+        padding: .5rem 1rem 1rem 1rem;
+        background-color: white;
+    }
+
+    .summary p:last-of-type{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     
     .summary::after{
-        background-image: url(media/nimbus.png), url(https://i.imgur.com/tEVUZwj.png);
-        content: " ";
-        background-size: cover;
-        height: 100px;
-        width: 100px;
-        background-repeat: no-repeat;
+        background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
         position: absolute;
-        z-index: 1;
-        bottom: -2rem;
-        left: 93%;
+        background-repeat: repeat-x;
+        animation: slide 12s linear infinite;
+        height: 50px;
+        width: 1500%;
+        bottom: -25%;
+        background-size: contain;
+        content:"";
     }
-    
-    
-    .summary > p:first-child{
-        overflow:visible;
-        color: black;
-        animation: marquee 25s linear infinite;
-        position:relative;
-        white-space: nowrap;
-    }
-    .summary > p:last-child{
-        overflow: hidden;
-        animation: marquee 25s linear infinite;
-        position: absolute;
-        top: 1%;
-        animation-delay: 16s;
-        padding: 10px 0px 10px 0px;
-        color:black;
-        white-space: nowrap;
-        opacity:0%;
-    }
-    
+
     .preamble{
         background: url(media/gifbackground.gif);    
         background-repeat: repeat;
@@ -585,17 +602,12 @@
         margin: 0 auto;
     }
     
-    .preamble > p:first-of-type{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    
     .preamble p{
-        padding: 1rem 1.5rem 1rem 1.5rem;
+        padding: 1rem 2.35rem 1rem 2.35rem;
         font-weight: 200;
         align-self: center;
         text-align: left;
-        font-size: 20px;
+        font-size: 14px;
         width:75%;
         background-color: #5C768D;
     }
@@ -612,10 +624,15 @@
     
     .supporting::before{
         background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
+        position: absolute;
+        transform: scaleX(-1);
         display: list-item;
-        padding-top: 2rem;
+        background-repeat: repeat-x;
+        animation: slide-reverse 12s linear infinite;
+        height: 50px;
+        width: 1500%;
         background-size: contain;
-        content:"";
+        content:" ";
     }
     
     .supporting{
@@ -645,7 +662,7 @@
     
     .explanation p{
         background-color: #5C768D;
-        font-size: 18px;
+        font-size: 14px;
         text-align: left;
         width: 50%;
         padding: 0rem 1rem 1rem 3rem;
@@ -663,7 +680,7 @@
         height: 500px;
         width: 30%;
         left: 65%;
-        bottom:15%;
+        top: 15%;
         background-repeat: no-repeat;
         position: absolute;
     }
@@ -691,7 +708,7 @@
     .participation p{
         background-color: #5C768D;
         right: 0;
-        font-size: 18px;
+        font-size: 14px;
         text-align: left;
         width: 80%;
         padding: 0rem 5rem 1rem 3rem;
@@ -706,7 +723,7 @@
         content: " ";
         background-position: left;
         left: -140%;
-        top: 30%;
+        top: 5%;
         rotate: 90deg;
         background-size: contain;
         transform: scale(1.5);
@@ -736,7 +753,7 @@
     
     .benefits p{
         background-color: #5C768D;
-        font-size: 18px;
+        font-size: 14px;
         text-align: left;
         width: 50%;
         padding: 0rem 1rem 1rem 3rem;
@@ -754,7 +771,7 @@
         height: 300px;
         width: 30%;
         right: 5%;
-        top:30%;
+        top:20%;
         background-repeat: no-repeat;
         position: absolute;
         bottom: 27.2rem; 
@@ -778,7 +795,7 @@
 
     .requirements p{
         background-color: #5C768D;
-        font-size: 18px;
+        font-size: 14px;
         text-align: justify;
         width: 60%;
         padding: 0rem 3rem 1rem 3rem;
@@ -799,8 +816,7 @@
         content: " ";
         background-position: bottom right;
         background-size: contain;
-        background-position: right;
-        top: 45%;
+        top:25%;
         right: 5%;
         height: 500px;
         width: 15%;
@@ -829,10 +845,11 @@
     }
     
     footer a{
+        font-size: 12px;
         font-family: 'Public Sans', sans-serif;
         color:black;
         background-image: url(media/nimbusicon.png), url(https://i.imgur.com/9eFs4Mu.png);
-		background-size: 100px;
+		background-size: contain;
 		background-repeat: no-repeat;
         text-decoration: none;
         transition: .3s;
@@ -869,16 +886,15 @@
         font-family: 'Public Sans', sans-serif;
     }
 
-    .wrapper::after{
+    .wrapper::before{
         background-image: url(media/trunks-thumbsup.png), url(https://i.imgur.com/cLj77vp.png);
         content: " ";
-        background-position:right;
         background-size: contain;
         background-position: right;
         align-self: self-end;
-        height: 150px;
-        right: 35%;
-        width: 20%;
+        height: 130px;
+        right: 40%;
+        width: 40%;
         background-repeat: no-repeat;
         position: absolute;
     }
@@ -892,7 +908,7 @@
         display: flex;
         flex-direction: row;
         align-items: top;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .wrapper a{
@@ -900,15 +916,15 @@
     }
 
     .design-selection{
-        padding: 3rem 0rem 3rem 3rem;
+        padding: 3rem 0rem 3rem 2rem;
     }
 
     .design-archives{
-        padding: 3rem 0rem 3rem 3rem;
+        padding: 3rem 0rem 3rem 2rem;
     }
 
     .zen-resources{
-        padding: 3rem 0rem 3rem 3rem;
+        padding: 3rem 3rem 3rem 2rem;
     }
 }
 
@@ -929,18 +945,18 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 12.1rem;
+
     }
       
     header h1{
-        font-size: 60px;
+        font-size: 40px;
         font-family: 'SaiyanSans', serif ;
         color: white;
         border-top: 2px solid black;
         border-right: 2px solid black;
         border-left: 2px solid black;
         -webkit-text-stroke: 1px black;
-        margin-top: 12rem;
+        margin-top: 6rem;
         padding: 1rem 1rem 1rem 1rem;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -952,7 +968,7 @@
     }
     
     header h2{
-        font-size: 40px;
+        font-size: 28px;
         font-family: 'Mangat', serif;
         border: 2px solid black;
         border-radius: 10px;
@@ -967,48 +983,55 @@
     }
     
     .summary{
-        position:relative;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: 600;
-        border-top: 2px solid #E0BB22;
-        border-bottom: 2px solid #E0BB22;
-        background-color:#F9EA93;
-        padding: 10px 0px 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    .summary p{
+        width: 50%;
+        padding: .5rem 1rem 1rem 1rem;
+        font-size: 17px;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        color: white;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .summary p:first-of-type{
+        background-image: url(media/etcbnr.png);
+        background-size: cover;
+    }
+
+    .summary p:last-of-type{
+        background-image: url(media/etcbnr2.png);
+        background-size: cover;
+    }
+
+    .summary a{
+        color:white;
+    }
+
+    .summary p:last-of-type{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     
     .summary::after{
-        background-image: url(media/nimbus.png), url(https://i.imgur.com/tEVUZwj.png);
-        content: " ";
-        background-size: cover;
-        height: 100px;
-        width: 100px;
-        background-repeat: no-repeat;
+        background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
         position: absolute;
-        z-index: 1;
-        bottom: -2rem;
-        left: 93%;
+        background-repeat: repeat-x;
+        animation: slide 12s linear infinite;
+        height: 50px;
+        width: 1500%;
+        bottom: 0%;
+        background-size: contain;
+        content:"";
     }
-    
-    
-    .summary > p:first-child{
-        overflow:visible;
-        color: black;
-        animation: marquee 25s linear infinite;
-        position:relative;
-        white-space: nowrap;
-    }
-    .summary > p:last-child{
-        overflow: hidden;
-        animation: marquee 25s linear infinite;
-        position: absolute;
-        top: 1%;
-        animation-delay:18s;
-        padding: 10px 0px 10px 0px;
-        color:black;
-        white-space: nowrap;
-        opacity:0%;
-    }
-    
+
     .preamble{
         background: url(media/gifbackground.gif);    
         background-repeat: repeat;
@@ -1031,17 +1054,12 @@
         margin: 0 auto;
     }
     
-    .preamble > p:first-of-type{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    
     .preamble p{
-        padding: 1rem 1.5rem 1rem 1.5rem;
+        padding: 1rem 2.35rem 1rem 2.35rem;
         font-weight: 200;
         align-self: center;
         text-align: left;
-        font-size: 20px;
+        font-size: 14px;
         width:75%;
         background-color: #5C768D;
     }
@@ -1049,6 +1067,11 @@
     .preamble > p:last-child{
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+
+    .preamble > p:first-of-type{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .preamble::after{
@@ -1058,10 +1081,15 @@
     
     .supporting::before{
         background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
+        position: absolute;
+        transform: scaleX(-1);
         display: list-item;
-        padding-top: 2rem;
+        background-repeat: repeat-x;
+        animation: slide-reverse 12s linear infinite;
+        height: 50px;
+        width: 1500%;
         background-size: contain;
-        content:"";
+        content:" ";
     }
     
     .supporting{
@@ -1091,7 +1119,7 @@
     
     .explanation p{
         background-color: #5C768D;
-        font-size: 18px;
+        font-size: 14px;
         text-align: left;
         width: 50%;
         padding: 0rem 1rem 1rem 3rem;
@@ -1102,14 +1130,14 @@
     }
     
     .explanation::after{
-        background-image: url(media/vegeta&trunks.png), url(https://i.imgur.com/QWMm11L.png);
+        background-image: url(media/vegeta.png), url(https://i.imgur.com/hnSmlcI.png);
         content: " ";
         background-position: top right;
         background-size: contain;
         height: 500px;
         width: 30%;
-        left: 60%;
-        bottom:2%;
+        left: 65%;
+        top: 15%;
         background-repeat: no-repeat;
         position: absolute;
     }
@@ -1137,7 +1165,7 @@
     .participation p{
         background-color: #5C768D;
         right: 0;
-        font-size: 18px;
+        font-size: 14px;
         text-align: left;
         width: 80%;
         padding: 0rem 5rem 1rem 3rem;
@@ -1147,14 +1175,15 @@
         border-bottom-left-radius: 10px;
     }
     
-    .participation::before{
-        background-image: url(https://i.imgur.com/rKl2dVK.png), url(media/gokupose.png);
+    .participation::after{
+        background-image: url(https://i.imgur.com/qy5Az6D.png), url(media/goku&vegeta.png);
         content: " ";
-        rotate: 0deg;
         background-position: left;
-        right: 95%;
-        top: 20%;
+        left: -140%;
+        top: 5%;
+        rotate: 90deg;
         background-size: contain;
+        transform: scale(1.5);
         height: 500px;
         width: 100%;
         position: absolute;
@@ -1181,7 +1210,7 @@
     
     .benefits p{
         background-color: #5C768D;
-        font-size: 18px;
+        font-size: 14px;
         text-align: left;
         width: 50%;
         padding: 0rem 1rem 1rem 3rem;
@@ -1192,14 +1221,14 @@
     }
     
      .benefits::after{
-        background-image: url(media/gokukid.png), url(https://i.imgur.com/eAEkS2y.png);
+        background-image: url(media/gohankid.png), url(https://i.imgur.com/eAEkS2y.png);
         content: " ";
         background-position: top right;
         background-size: contain;
         height: 300px;
         width: 30%;
         right: 5%;
-        top:25%;
+        top:10%;
         background-repeat: no-repeat;
         position: absolute;
         bottom: 27.2rem; 
@@ -1223,7 +1252,7 @@
 
     .requirements p{
         background-color: #5C768D;
-        font-size: 18px;
+        font-size: 14px;
         text-align: justify;
         width: 60%;
         padding: 0rem 3rem 1rem 3rem;
@@ -1244,7 +1273,7 @@
         content: " ";
         background-position: bottom right;
         background-size: contain;
-        top:30%;
+        top:15%;
         right: 5%;
         height: 500px;
         width: 15%;
@@ -1256,7 +1285,7 @@
         content: " ";
         background-position: center left;
         background-size: contain;
-        top:0%;
+        top:-5%;
         left: 1%;
         height: 500px;
         width: 19%;
@@ -1273,10 +1302,11 @@
     }
     
     footer a{
+        font-size: 12px;
         font-family: 'Public Sans', sans-serif;
         color:black;
         background-image: url(media/nimbusicon.png), url(https://i.imgur.com/9eFs4Mu.png);
-		background-size: 100px;
+		background-size: contain;
 		background-repeat: no-repeat;
         text-decoration: none;
         transition: .3s;
@@ -1313,15 +1343,15 @@
         font-family: 'Public Sans', sans-serif;
     }
 
-    aside::after{
+    .wrapper::before{
         background-image: url(media/trunks-thumbsup.png), url(https://i.imgur.com/cLj77vp.png);
         content: " ";
-        background-position:right;
         background-size: contain;
-        height: 160px;
-        top:44%;
-        right: 43%;
-        width: 20%;
+        background-position: right;
+        align-self: self-end;
+        height: 230px;
+        right: 3%;
+        width: 40%;
         background-repeat: no-repeat;
         position: absolute;
     }
@@ -1335,6 +1365,7 @@
         display: flex;
         flex-direction: row;
         align-items: top;
+        font-size: 12px;
     }
 
     .wrapper a{
@@ -1342,15 +1373,15 @@
     }
 
     .design-selection{
-        padding: 3rem 0rem 3rem 3rem;
+        padding: 3rem 0rem 3rem 2rem;
     }
 
     .design-archives{
-        padding: 3rem 0rem 3rem 3rem;
+        padding: 3rem 0rem 3rem 2rem;
     }
 
     .zen-resources{
-        padding: 3rem 0rem 3rem 3rem;
+        padding: 3rem 3rem 3rem 2rem;
     }
 }
 
