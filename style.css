@@ -331,7 +331,7 @@
     }
     
      .benefits::after{
-        background-image: url(media/gohankid.png), url(https://i.imgur.com/eAEkS2y.png);
+        background-image: url(media/gohankid.png), url(https://i.imgur.com/ILSWxe0.png);
         content: " ";
         background-position: top right;
         background-size: contain;
@@ -573,11 +573,10 @@
         position: absolute;
         align-self: end;
         background-repeat: repeat-x;
-        animation: slide 12s linear infinite;
         background-attachment: fixed;
         height: 50px;
-        width: 1500%;
-        bottom: -25%;
+        width: 100%;
+        bottom: 15%;
         background-size: contain;
         content: "";
     }
@@ -630,9 +629,8 @@
         transform: scaleX(-1);
         display: list-item;
         background-repeat: repeat-x;
-        animation: slide-reverse 12s linear infinite;
         height: 50px;
-        width: 1500%;
+        width: 100%;
         background-size: contain;
         content:" ";
     }
@@ -766,7 +764,7 @@
     }
     
      .benefits::after{
-        background-image: url(media/gohankid.png), url(https://i.imgur.com/eAEkS2y.png);
+        background-image: url(media/gohankid.png), url(https://i.imgur.com/ILSWxe0.png);
         content: " ";
         background-position: top right;
         background-size: contain;
@@ -895,7 +893,7 @@
         background-position: right;
         align-self: self-end;
         height: 130px;
-        right: 40%;
+        right: 48%;
         width: 40%;
         background-repeat: no-repeat;
         position: absolute;
@@ -1026,10 +1024,9 @@
         background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
         position: absolute;
         background-repeat: repeat-x;
-        animation: slide 12s linear infinite;
         height: 50px;
-        width: 1500%;
-        bottom: 0%;
+        width: 100%;
+        bottom: 30%;
         background-size: contain;
         content:"";
     }
@@ -1087,9 +1084,8 @@
         transform: scaleX(-1);
         display: list-item;
         background-repeat: repeat-x;
-        animation: slide-reverse 12s linear infinite;
         height: 50px;
-        width: 1500%;
+        width: 100%;
         background-size: contain;
         content:" ";
     }
@@ -1223,7 +1219,7 @@
     }
     
      .benefits::after{
-        background-image: url(media/gohankid.png), url(https://i.imgur.com/eAEkS2y.png);
+        background-image: url(media/gohankid.png), url(https://i.imgur.com/ILSWxe0.png);
         content: " ";
         background-position: top right;
         background-size: contain;
