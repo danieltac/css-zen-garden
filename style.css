@@ -44,6 +44,14 @@
     margin: 0;
 }
 
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 @media only screen and (min-width: 400px) and (max-width: 600px){
     body{
         overflow-x: hidden;
@@ -84,6 +92,451 @@
     }
     
     header h2{
+        font-size: 24px;
+        font-family: 'Mangat', serif;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        background-image: url(https://i.imgur.com/Wb79T98.png), url(media/vegetabanner.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    .summary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    .summary p{
+        width: 75%;
+        padding: .5rem 1rem 1rem 1rem;
+        font-size: 17px;
+        font-weight: 600;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        color: white;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .summary p:first-of-type{
+        background-image: url(media/etcbnr.png);
+        background-size: cover;
+    }
+
+    .summary p:last-of-type{
+        background-image: url(media/etcbnr2.png);
+        background-size: cover;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .summary a{
+        color: white;
+    }
+    
+    /* .preamble::before {
+        background: url(https://i.imgur.com/3SI8dO4.png), url(media/shenrontexturebanner.png);
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        bottom: 45%;
+        background-size: contain;
+        content: "";
+    } */
+
+    .preamble{
+        background: url(media/gifbackground.gif);    
+        background-repeat: repeat;
+        background-size: cover;
+        font-family: 'Public Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        color: white;
+        text-align: center;
+    }
+    
+    .preamble h3{
+        background-color: #5C768D;
+        font-weight: 600;
+        padding: 1rem .5rem 1rem .5rem;
+        font-size: 24px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0 auto;
+    }
+    
+    .preamble p{
+        padding: .5rem .5rem .5rem .5rem;
+        font-weight: 200;
+        align-self: center;
+        text-align: left;
+        font-size: 14px;
+        width:75%;
+        background-color: #5C768D;
+    }
+    
+    .preamble > p:last-child{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .preamble::after{
+        content: url(media/gohanssj2.gif);
+        padding-bottom: 5rem;
+    }
+/*     
+    .supporting::before{
+        background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
+        position: absolute;
+        transform: scaleX(-1);
+        height: 50px;
+        width: 100%;
+        background-size: contain;
+        content:" ";
+    } */
+    
+    .supporting{
+        font-family: 'Public Sans', sans-serif;
+        background-image: url(media/supbackground.jpg), url(https://i.imgur.com/TADy2QD.jpg);
+        background-size: cover;
+        color: white;
+    }
+    
+    .explanation{
+        display:flex;
+        position: relative;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    
+    .explanation h3{
+        background-color: #5C768D;
+        border-top-right-radius: 10px;
+        font-size: 30px;
+        text-align: left;
+        width: 50%;
+        margin-top: 3rem;
+        padding: .5rem 1rem 1rem 1rem;
+    }
+    
+    .explanation p{
+        background-color: #5C768D;
+        font-size: 14px;
+        text-align: left;
+        width: 50%;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    
+    .explanation > p:last-child{
+        border-bottom-right-radius: 10px;
+    }
+    
+    .explanation::after{
+        background-image: url(media/vegeta.png), url(https://i.imgur.com/hnSmlcI.png);
+        content: " ";
+        background-position: top right;
+        background-size: contain;
+        height: 500px;
+        width: 40%;
+        left: 60%;
+        top: 25%;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    
+    .participation{
+        width: 50%;
+        left:50%;
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    
+    .participation h3{
+        background-color: #5C768D;
+        border-top-left-radius: 10px;
+        font-size: 30px;
+        text-align: left;
+        width: 80%;
+        right: 0;
+        margin-top: 3rem;
+        padding: .5rem 1.6rem 1rem 1rem;
+    }
+    
+    .participation p{
+        background-color: #5C768D;
+        right: 0;
+        font-size: 14px;
+        text-align: left;
+        width: 80%;
+        padding: .5rem 1.6rem 1rem 1rem;
+    }
+    
+    .participation > p:last-child{
+        border-bottom-left-radius: 10px;
+    }
+    
+    .participation::after{
+        background-image: url(https://i.imgur.com/qy5Az6D.png), url(media/goku&vegeta.png);
+        content: " ";
+        background-position: left;
+        left: -160%;
+        top: 18%;
+        rotate: 90deg;
+        background-size: contain;
+        transform: scale(2.5);
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .benefits{
+        display:flex;
+        position: relative;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    
+    .benefits h3{
+        background-color: #5C768D;
+        border-top-right-radius: 10px;
+        font-size: 30px;
+        text-align: left;
+        width: 50%;
+        margin-top: 3rem;
+        padding: .5rem 1rem 1rem 3rem;
+    }
+    
+    .benefits p{
+        background-color: #5C768D;
+        font-size: 14px;
+        text-align: left;
+        width: 50%;
+        padding: 0rem 1rem 1rem 3rem;
+    }
+    
+    .benefits > p:last-child{
+        border-bottom-right-radius: 10px;
+    }
+    
+     .benefits::after{
+        background-image: url(media/gohankid.png), url(https://i.imgur.com/ILSWxe0.png);
+        content: " ";
+        background-position: top right;
+        background-size: contain;
+        height: 300px;
+        width: 30%;
+        right: 2%;
+        top:30%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 27.2rem; 
+    }
+     
+    .requirements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:relative;
+    }
+
+    .requirements h3{
+        background-color: #5C768D;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 30px;
+        padding: .5rem 1rem 0rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .requirements p{
+        background-color: #5C768D;
+        font-size: 14px;
+        text-align: justify;
+        width: 60%;
+        padding: 0rem 3rem 1rem 3rem;
+    }
+
+    .requirements > p:first-of-type{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding-top: 1rem;
+    }
+    .requirements > p:last-of-type{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 4rem;
+    }
+    .requirements::before{
+        background-image: url(media/vegitto.png), url(https://i.imgur.com/V67TCkH.png);
+        content: " ";
+        background-position: bottom right;
+        background-size: contain;
+        top:45%;
+        right: 5%;
+        height: 500px;
+        width: 15%;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    .requirements::after{
+        background-image: url(media/gogeta.png), url(https://i.imgur.com/vt52i2j.png);
+        content: " ";
+        background-position: center left;
+        background-size: contain;
+        top: -10%;
+        left: 1%;
+        height: 500px;
+        width: 19%;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        background:url(media/shenrontexturebanner.png), url(https://i.imgur.com/NyUyyzV.png);
+        background-size: contain;
+        border: 1px solid black;
+
+    }
+    
+    footer a{
+        font-size: 6px;
+        font-family: 'Public Sans', sans-serif;
+        color:black;
+        background-image: url(media/nimbusicon.png), url(https://i.imgur.com/9eFs4Mu.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+        text-decoration: none;
+        transition: .3s;
+    }
+
+	footer a:first-of-type{
+		padding: 1rem 2.3rem 1rem 1rem;
+	}
+
+	footer a:nth-child(2){
+		padding: 1rem 3rem 1rem 1.3rem;
+	}
+
+	footer a:nth-child(3){
+		padding: 1rem 3rem 1rem 1.5rem;
+	}
+
+	footer a:nth-child(4){
+		padding: 1rem 2.8rem 1rem 1.3rem;
+	}
+
+	footer a:last-of-type{
+		padding: 1rem 3rem 1rem 1.6rem;
+	}
+	
+    footer a:hover{
+        transform: scale(1.20);
+        transition: .3s;
+    }
+
+    aside{
+        background: linear-gradient(#e66465, #9198e5);
+        position:relative;
+        font-family: 'Public Sans', sans-serif;
+    }
+
+    .wrapper::before{
+        background-image: url(media/trunks-thumbsup.png), url(https://i.imgur.com/cLj77vp.png);
+        content: " ";
+        background-size: contain;
+        background-position: right;
+        align-self: self-end;
+        height: 150px;
+        right: 3%;
+        width: 40%;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+
+    .wrapper ul li{
+        list-style: none;
+        padding: 0 0 2px 0;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        font-size: 12px;
+    }
+
+    .wrapper a{
+        color: white;   
+    }
+
+    .design-selection{
+        padding: 3rem 0rem 3rem 2rem;
+    }
+
+    .design-archives{
+        padding: 3rem 0rem 3rem 2rem;
+    }
+
+    .zen-resources{
+        padding: 3rem 3rem 3rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+    }
+      
+    .intro{
+        background-image: url(media/bck.png), url(https://i.imgur.com/oGvxkrz.png);
+        background-repeat: no-repeat;
+        background-size: 1280px 720px;
+        display: flex;
+        flex-basis: 100px;
+        flex-direction: column;
+    }
+      
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+      
+    header h1{
+        font-size: 40px;
+        font-family: 'SaiyanSans', serif ;
+        color: white;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        -webkit-text-stroke: 1px black;
+        margin-top: 14rem;
+        padding: 1rem 1rem 1rem 1rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: white;
+        background-image: url(https://i.imgur.com/MwJiPZd.png), url(media/gokubanner.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+    
+    header h2{
         font-size: 28px;
         font-family: 'Mangat', serif;
         border: 2px solid black;
@@ -109,43 +562,26 @@
     .summary p{
         width: 50%;
         padding: .5rem 1rem 1rem 1rem;
-        font-size: 17px;
-        border-bottom: 2px solid black;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        color: white;
-        -webkit-text-stroke: 1px black;
-    }
-
-    .summary p:first-of-type{
-        background-image: url(media/etcbnr.png);
-        background-size: cover;
+        background-color: white;
     }
 
     .summary p:last-of-type{
-        background-image: url(media/etcbnr2.png);
-        background-size: cover;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-
-    .summary a{
-        color: white;
-    }
     
-    .preamble::before {
+    /* .preamble::before {
         background: url(https://i.imgur.com/3SI8dO4.png), url(media/shenrontexturebanner.png);
         position: absolute;
         align-self: end;
         background-repeat: repeat-x;
-        animation: slide 12s linear infinite;
         background-attachment: fixed;
         height: 50px;
-        width: 1500%;
-        bottom: -25%;
+        width: 100%;
+        bottom: 15%;
         background-size: contain;
         content: "";
-    }
+    } */
 
     .preamble{
         background: url(media/gifbackground.gif);    
@@ -189,18 +625,17 @@
         padding-bottom: 5rem;
     }
     
-    .supporting::before{
+    /* .supporting::before{
         background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
         position: absolute;
         transform: scaleX(-1);
         display: list-item;
         background-repeat: repeat-x;
-        animation: slide-reverse 12s linear infinite;
         height: 50px;
-        width: 1500%;
+        width: 100%;
         background-size: contain;
         content:" ";
-    }
+    } */
     
     .supporting{
         font-family: 'Public Sans', sans-serif;
@@ -461,439 +896,6 @@
         align-self: self-end;
         height: 130px;
         right: 40%;
-        width: 40%;
-        background-repeat: no-repeat;
-        position: absolute;
-    }
-
-    .wrapper ul li{
-        list-style: none;
-        padding: 0 0 2px 0;
-    }
-
-    .wrapper{
-        display: flex;
-        flex-direction: row;
-        align-items: top;
-        font-size: 12px;
-    }
-
-    .wrapper a{
-        color: white;   
-    }
-
-    .design-selection{
-        padding: 3rem 0rem 3rem 2rem;
-    }
-
-    .design-archives{
-        padding: 3rem 0rem 3rem 2rem;
-    }
-
-    .zen-resources{
-        padding: 3rem 3rem 3rem 2rem;
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 767px) {
-    body{
-        overflow-x: hidden;
-    }
-      
-    .intro{
-        background-image: url(media/bck.png), url(https://i.imgur.com/oGvxkrz.png);
-        background-repeat: no-repeat;
-        background-size: 1280px 720px;
-        display: flex;
-        flex-direction: column;
-    }
-      
-    header{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-    }
-      
-    header h1{
-        font-size: 40px;
-        font-family: 'SaiyanSans', serif ;
-        color: white;
-        border-top: 2px solid black;
-        border-right: 2px solid black;
-        border-left: 2px solid black;
-        -webkit-text-stroke: 1px black;
-        margin-top: 14rem;
-        padding: 1rem 1rem 1rem 1rem;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        background-color: white;
-        background-image: url(https://i.imgur.com/MwJiPZd.png), url(media/gokubanner.png);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: cover;
-    }
-    
-    header h2{
-        font-size: 28px;
-        font-family: 'Mangat', serif;
-        border: 2px solid black;
-        border-radius: 10px;
-        background-color: white;
-        color: white;
-        -webkit-text-stroke: 1px black;
-        background-image: url(https://i.imgur.com/Wb79T98.png), url(media/vegetabanner.png);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: cover;
-        padding: 1rem 1rem 1rem 1rem;
-    }
-    
-    .summary{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 6rem;
-    }
-
-    .summary p{
-        width: 50%;
-        padding: .5rem 1rem 1rem 1rem;
-        background-color: white;
-    }
-
-    .summary p:last-of-type{
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    
-    .preamble::before {
-        background: url(https://i.imgur.com/3SI8dO4.png), url(media/shenrontexturebanner.png);
-        position: absolute;
-        align-self: end;
-        background-repeat: repeat-x;
-        background-attachment: fixed;
-        height: 50px;
-        width: 100%;
-        bottom: 15%;
-        background-size: contain;
-        content: "";
-    }
-
-    .preamble{
-        background: url(media/gifbackground.gif);    
-        background-repeat: repeat;
-        background-size: cover;
-        font-family: 'Public Sans', sans-serif;
-        display: flex;
-        flex-direction: column;
-        padding-top: 10rem;
-        color: white;
-        text-align: center;
-    }
-    
-    .preamble h3{
-        background-color: #5C768D;
-        font-weight: 600;
-        padding: 1rem 1.5rem 1rem 1.5rem;
-        font-size: 30px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin: 0 auto;
-    }
-    
-    .preamble p{
-        padding: 1rem 2.35rem 1rem 2.35rem;
-        font-weight: 200;
-        align-self: center;
-        text-align: left;
-        font-size: 14px;
-        width:75%;
-        background-color: #5C768D;
-    }
-    
-    .preamble > p:last-child{
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    
-    .preamble::after{
-        content: url(media/gohanssj2.gif);
-        padding-bottom: 5rem;
-    }
-    
-    .supporting::before{
-        background: url(https://i.imgur.com/3SI8dO4.png) left center, url(media/shenrontexturebanner.png) left center;
-        position: absolute;
-        transform: scaleX(-1);
-        display: list-item;
-        background-repeat: repeat-x;
-        height: 50px;
-        width: 100%;
-        background-size: contain;
-        content:" ";
-    }
-    
-    .supporting{
-        font-family: 'Public Sans', sans-serif;
-        background-image: url(media/supbackground.jpg), url(https://i.imgur.com/TADy2QD.jpg);
-        background-size: cover;
-        color: white;
-    }
-    
-    .explanation{
-        display:flex;
-        position: relative;
-        flex-direction: column;
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-    }
-    
-    .explanation h3{
-        background-color: #5C768D;
-        border-top-right-radius: 10px;
-        font-size: 30px;
-        text-align: left;
-        width: 50%;
-        margin-top: 3rem;
-        padding: .5rem 1rem 1rem 3rem;
-    }
-    
-    .explanation p{
-        background-color: #5C768D;
-        font-size: 14px;
-        text-align: left;
-        width: 50%;
-        padding: 0rem 1rem 1rem 3rem;
-    }
-    
-    .explanation > p:last-child{
-        border-bottom-right-radius: 10px;
-    }
-    
-    .explanation::after{
-        background-image: url(media/vegeta.png), url(https://i.imgur.com/hnSmlcI.png);
-        content: " ";
-        background-position: top right;
-        background-size: contain;
-        height: 500px;
-        width: 30%;
-        left: 65%;
-        top: 15%;
-        background-repeat: no-repeat;
-        position: absolute;
-    }
-    
-    .participation{
-        width: 50%;
-        left:50%;
-        position: relative;
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-    }
-    
-    .participation h3{
-        background-color: #5C768D;
-        border-top-right-radius: 10px;
-        font-size: 30px;
-        text-align: left;
-        border-top-left-radius: 10px;
-        width: 80%;
-        right: 0;
-        margin-top: 3rem;
-        padding: .5rem 5rem 1rem 3rem;
-    }
-    
-    .participation p{
-        background-color: #5C768D;
-        right: 0;
-        font-size: 14px;
-        text-align: left;
-        width: 80%;
-        padding: 0rem 5rem 1rem 3rem;
-    }
-    
-    .participation > p:last-child{
-        border-bottom-left-radius: 10px;
-    }
-    
-    .participation::after{
-        background-image: url(https://i.imgur.com/qy5Az6D.png), url(media/goku&vegeta.png);
-        content: " ";
-        background-position: left;
-        left: -140%;
-        top: 5%;
-        rotate: 90deg;
-        background-size: contain;
-        transform: scale(1.5);
-        height: 500px;
-        width: 100%;
-        position: absolute;
-        background-repeat: no-repeat;
-    }
-    
-    .benefits{
-        display:flex;
-        position: relative;
-        flex-direction: column;
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-    }
-    
-    .benefits h3{
-        background-color: #5C768D;
-        border-top-right-radius: 10px;
-        font-size: 30px;
-        text-align: left;
-        width: 50%;
-        margin-top: 3rem;
-        padding: .5rem 1rem 1rem 3rem;
-    }
-    
-    .benefits p{
-        background-color: #5C768D;
-        font-size: 14px;
-        text-align: left;
-        width: 50%;
-        padding: 0rem 1rem 1rem 3rem;
-    }
-    
-    .benefits > p:last-child{
-        border-bottom-right-radius: 10px;
-    }
-    
-     .benefits::after{
-        background-image: url(media/gohankid.png), url(https://i.imgur.com/ILSWxe0.png);
-        content: " ";
-        background-position: top right;
-        background-size: contain;
-        height: 300px;
-        width: 30%;
-        right: 5%;
-        top:20%;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 27.2rem; 
-    }
-     
-    .requirements{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position:relative;
-    }
-
-    .requirements h3{
-        background-color: #5C768D;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        font-size: 30px;
-        padding: .5rem 1rem 0rem 1rem;
-        margin-top: 3rem;
-    }
-
-    .requirements p{
-        background-color: #5C768D;
-        font-size: 14px;
-        text-align: justify;
-        width: 60%;
-        padding: 0rem 3rem 1rem 3rem;
-    }
-
-    .requirements > p:first-of-type{
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        padding-top: 1rem;
-    }
-    .requirements > p:last-of-type{
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        margin-bottom: 4rem;
-    }
-    .requirements::before{
-        background-image: url(media/vegitto.png), url(https://i.imgur.com/V67TCkH.png);
-        content: " ";
-        background-position: bottom right;
-        background-size: contain;
-        top:25%;
-        right: 5%;
-        height: 500px;
-        width: 15%;
-        background-repeat: no-repeat;
-        position: absolute;
-    }
-    .requirements::after{
-        background-image: url(media/gogeta.png), url(https://i.imgur.com/vt52i2j.png);
-        content: " ";
-        background-position: center left;
-        background-size: contain;
-        top:-5%;
-        left: 1%;
-        height: 500px;
-        width: 19%;
-        background-repeat: no-repeat;
-        position: absolute;
-    }
-    footer{
-        display: flex;
-        justify-content: space-around;
-        background:url(media/shenrontexturebanner.png), url(https://i.imgur.com/NyUyyzV.png);
-        background-size: contain;
-        border: 1px solid black;
-
-    }
-    
-    footer a{
-        font-size: 12px;
-        font-family: 'Public Sans', sans-serif;
-        color:black;
-        background-image: url(media/nimbusicon.png), url(https://i.imgur.com/9eFs4Mu.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-        text-decoration: none;
-        transition: .3s;
-    }
-
-	footer a:first-of-type{
-		padding: 1rem 2.3rem 1rem 1rem;
-	}
-
-	footer a:nth-child(2){
-		padding: 1rem 3rem 1rem 1.3rem;
-	}
-
-	footer a:nth-child(3){
-		padding: 1rem 3.6rem 1rem 1.5rem;
-	}
-
-	footer a:nth-child(4){
-		padding: 1rem 2.8rem 1rem 1.3rem;
-	}
-
-	footer a:last-of-type{
-		padding: 1rem 3.5rem 1rem 1.6rem;
-	}
-	
-    footer a:hover{
-        transform: scale(1.20);
-        transition: .3s;
-    }
-
-    aside{
-        background: linear-gradient(#e66465, #9198e5);
-        position:relative;
-        font-family: 'Public Sans', sans-serif;
-    }
-
-    .wrapper::before{
-        background-image: url(media/trunks-thumbsup.png), url(https://i.imgur.com/cLj77vp.png);
-        content: " ";
-        background-size: contain;
-        background-position: right;
-        align-self: self-end;
-        height: 130px;
-        right: 48%;
         width: 40%;
         background-repeat: no-repeat;
         position: absolute;
