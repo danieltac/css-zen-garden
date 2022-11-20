@@ -122,7 +122,6 @@ html {
         width: 75%;
         padding: .5rem 1rem 1rem 1rem;
         font-size: 17px;
-        font-weight: 600;
         border-bottom: 2px solid black;
         border-left: 2px solid black;
         border-right: 2px solid black;
@@ -133,11 +132,13 @@ html {
     .summary p:first-of-type {
         background-image: url(media/etcbnr.png);
         background-size: cover;
+        font-weight: 600;
     }
 
     .summary p:last-of-type {
         background-image: url(media/etcbnr2.png);
         background-size: cover;
+        font-weight: 600;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -580,11 +581,13 @@ html {
     .summary p:first-of-type {
         background-image: url(media/etcbnr.png);
         background-size: cover;
+        font-weight: 600;
     }
 
     .summary p:last-of-type {
         background-image: url(media/etcbnr2.png);
         background-size: cover;
+        font-weight: 600;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -1017,7 +1020,6 @@ html {
         width: 50%;
         padding: .5rem 1rem 1rem 1rem;
         font-size: 17px;
-        font-weight: 600;
         border-bottom: 2px solid black;
         border-left: 2px solid black;
         border-right: 2px solid black;
@@ -1032,11 +1034,13 @@ html {
     .summary p:first-of-type {
         background-image: url(media/etcbnr.png);
         background-size: cover;
+        font-weight: 600;
     }
 
     .summary p:last-of-type {
         background-image: url(media/etcbnr2.png);
         background-size: cover;
+        font-weight: 600;
     }
 
     .preamble::before {
@@ -1464,7 +1468,6 @@ html {
         width: 50%;
         padding: .5rem 1rem 1rem 1rem;
         font-size: 17px;
-        font-weight: 600;
         border-bottom: 2px solid black;
         border-left: 2px solid black;
         border-right: 2px solid black;
@@ -1475,11 +1478,13 @@ html {
     .summary p:first-of-type {
         background-image: url(media/etcbnr.png);
         background-size: cover;
+        font-weight: 600;
     }
 
     .summary p:last-of-type {
         background-image: url(media/etcbnr2.png);
         background-size: cover;
+        font-weight: 600;
     }
 
     .summary a {
