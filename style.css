@@ -1024,6 +1024,10 @@ html {
         -webkit-text-stroke: 1px black;
     }
 
+    .summary a{
+        color: white;
+    }
+
     .summary p:first-of-type {
         background-image: url(media/etcbnr.png);
         background-size: cover;
