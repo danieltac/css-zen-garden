@@ -2996,7 +2996,7 @@ html {
         background-position: top right;
         background-size: contain;
         height: 250px;
-        width: 20%;
+        width: 100%;
         right: 15%;
         top: 10%;
         background-repeat: no-repeat;
@@ -3048,7 +3048,7 @@ html {
         top: 15%;
         right: 5%;
         height: 500px;
-        width: 15%;
+        width: 100%;
         background-repeat: no-repeat;
         position: absolute;
     }
